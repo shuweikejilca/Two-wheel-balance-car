@@ -336,7 +336,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\Hardware</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\Hardware\inc;.\Hardware\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -688,27 +688,42 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Hardware</GroupName>
+          <GroupName>Hardware\inc</GroupName>
           <Files>
-            <File>
-              <FileName>OLED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\OLED.c</FilePath>
-            </File>
             <File>
               <FileName>OLED.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Hardware\OLED.h</FilePath>
-            </File>
-            <File>
-              <FileName>OLED_Data.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\OLED_Data.c</FilePath>
+              <FilePath>.\Hardware\inc\OLED.h</FilePath>
             </File>
             <File>
               <FileName>OLED_Data.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Hardware\OLED_Data.h</FilePath>
+              <FilePath>.\Hardware\inc\OLED_Data.h</FilePath>
+            </File>
+            <File>
+              <FileName>encoder.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\encoder.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Hardware\src</GroupName>
+          <Files>
+            <File>
+              <FileName>OLED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\OLED.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\OLED_Data.c</FilePath>
+            </File>
+            <File>
+              <FileName>encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\encoder.c</FilePath>
             </File>
           </Files>
         </Group>
