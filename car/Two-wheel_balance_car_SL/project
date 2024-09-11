@@ -1,0 +1,7 @@
+#ifndef __COUNTSENSOR__
+#define __COUNTSENSOR__
+
+void CountSensor_init(void);
+uint16_t CountSensor_Get(void);
+
+#endif
